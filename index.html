@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashish Jha | ML/AI/Data Science Portfolio</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; }
+        
+        /* Header */
+        header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 80px 20px; text-align: center; }
+        header h1 { font-size: 3em; margin-bottom: 10px; }
+        header p { font-size: 1.3em; opacity: 0.9; }
+        
+        /* Navigation */
+        nav { background: #2c3e50; padding: 15px 0; position: sticky; top: 0; z-index: 100; }
+        nav ul { list-style: none; text-align: center; }
+        nav li { display: inline-block; margin: 0 20px; }
+        nav a { color: white; text-decoration: none; font-weight: 500; transition: color 0.3s; }
+        nav a:hover { color: #667eea; }
+        
+        /* Container */
+        .container { max-width: 1200px; margin: 0 auto; padding: 60px 20px; }
+        
+        /* Section Titles */
+        .section-title { font-size: 2.5em; text-align: center; margin-bottom: 50px; color: #2c3e50; position: relative; }
+        .section-title:after { content: ''; display: block; width: 80px; height: 4px; background: #667eea; margin: 20px auto 0; }
+        
+        /* About Section */
+        #about { background: #f8f9fa; }
+        .about-content { display: flex; align-items: center; gap: 50px; flex-wrap: wrap; justify-content: center; }
+        .about-text { flex: 1; min-width: 300px; }
+        .about-text p { font-size: 1.1em; margin-bottom: 20px; }
+        
+        /* Skills */
+        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+        .skill-card { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s; }
+        .skill-card:hover { transform: translateY(-5px); }
+        .skill-card h3 { color: #667eea; margin-bottom: 15px; }
+        .skill-card ul { list-style-position: inside; }
+        
+        /* Projects */
+        #projects { background: #f8f9fa; }
+        .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px; }
+        .project-card { background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s; }
+        .project-card:hover { transform: translateY(-5px); }
+        .project-header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 25px; }
+        .project-header h3 { font-size: 1.5em; margin-bottom: 10px; }
+        .project-body { padding: 25px; }
+        .project-body p { margin-bottom: 15px; color: #666; }
+        .project-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 15px; }
+        .tag { background: #e9ecef; padding: 5px 15px; border-radius: 20px; font-size: 0.85em; color: #495057; }
+        .btn { display: inline-block; background: #667eea; color: white; padding: 10px 25px; border-radius: 5px; text-decoration: none; transition: background 0.3s; }
+        .btn:hover { background: #764ba2; }
+        
+        /* Contact */
+        .contact-info { text-align: center; font-size: 1.2em; }
+        .contact-links { display: flex; justify-content: center; gap: 30px; margin-top: 30px; flex-wrap: wrap; }
+        .contact-btn { background: #2c3e50; color: white; padding: 15px 30px; border-radius: 5px; text-decoration: none; transition: background 0.3s; }
+        .contact-btn:hover { background: #667eea; }
+        
+        /* Footer */
+        footer { background: #2c3e50; color: white; text-align: center; padding: 30px 20px; }
+        
+        @media (max-width: 768px) {
+            header h1 { font-size: 2em; }
+            .section-title { font-size: 2em; }
+            .about-content { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ashish Jha</h1>
+        <p>ML Engineer | AI Specialist | Data Scientist</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a passionate Machine Learning Engineer and Data Scientist with expertise in building production-ready AI solutions. With a strong foundation in Python, machine learning algorithms, and deep learning frameworks, I transform complex data into actionable insights.</p>
+                    <p>I specialize in developing end-to-end ML pipelines, from data preprocessing and model training to deployment and monitoring. My portfolio showcases 5 production-ready projects demonstrating proficiency in classification, regression, NLP, and anomaly detection.</p>
+                    <p>Currently seeking opportunities to leverage my skills in innovative AI/ML teams to solve real-world problems at scale.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Programming</h3>
+                    <ul>
+                        <li>Python (Advanced)</li>
+                        <li>SQL</li>
+                        <li>R</li>
+                        <li>Git & GitHub</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>ML/AI Frameworks</h3>
+                    <ul>
+                        <li>Scikit-learn</li>
+                        <li>TensorFlow</li>
+                        <li>PyTorch</li>
+                        <li>XGBoost</li>
+                        <li>Keras</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Data Science</h3>
+                    <ul>
+                        <li>Pandas & NumPy</li>
+                        <li>Matplotlib & Seaborn</li>
+                        <li>Statistical Analysis</li>
+                        <li>Feature Engineering</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Specializations</h3>
+                    <ul>
+                        <li>Machine Learning</li>
+                        <li>Deep Learning</li>
+                        <li>NLP</li>
+                        <li>Computer Vision</li>
+                        <li>Time Series</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Customer Churn Prediction</h3>
+                    </div>
+                    <div class="project-body">
+                        <p>Production-ready churn prediction using Logistic Regression, Random Forest, and XGBoost with SMOTE balancing and comprehensive feature engineering.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Scikit-learn</span>
+                            <span class="tag">XGBoost</span>
+                            <span class="tag">SMOTE</span>
+                        </div>
+                        <a href="https://github.com/ASHISH311001/customer-churn-prediction" target="_blank" class="btn">View Project</a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Fake News Detection (NLP)</h3>
+                    </div>
+                    <div class="project-body">
+                        <p>NLP-based fake news classifier using TF-IDF and Logistic Regression achieving 96% accuracy. Includes Streamlit web app for real-time classification.</p>
+                        <div class="project-tags">
+                            <span class="tag">NLP</span>
+                            <span class="tag">TF-IDF</span>
+                            <span class="tag">NLTK</span>
+                            <span class="tag">Streamlit</span>
+                        </div>
+                        <a href="https://github.com/ASHISH311001/fake-news-detection-nlp" target="_blank" class="btn">View Project</a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Credit Card Fraud Detection</h3>
+                    </div>
+                    <div class="project-body">
+                        <p>Anomaly detection system using Isolation Forest and Autoencoders for identifying fraudulent transactions with high recall and precision.</p>
+                        <div class="project-tags">
+                            <span class="tag">Anomaly Detection</span>
+                            <span class="tag">Isolation Forest</span>
+                            <span class="tag">Imbalanced Data</span>
+                        </div>
+                        <a href="https://github.com/ASHISH311001/credit-card-fraud-detection" target="_blank" class="btn">View Project</a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>House Price Prediction</h3>
+                    </div>
+                    <div class="project-body">
+                        <p>Advanced regression model using Linear Regression and Gradient Boosting with GridSearchCV hyperparameter tuning, achieving R² score of 0.86.</p>
+                        <div class="project-tags">
+                            <span class="tag">Regression</span>
+                            <span class="tag">Gradient Boosting</span>
+                            <span class="tag">GridSearchCV</span>
+                        </div>
+                        <a href="https://github.com/ASHISH311001/house-price-prediction" target="_blank" class="btn">View Project</a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Retail Data EDA</h3>
+                    </div>
+                    <div class="project-body">
+                        <p>Comprehensive exploratory data analysis on retail data with statistical testing, correlation analysis, sales trends, and customer behavior insights.</p>
+                        <div class="project-tags">
+                            <span class="tag">EDA</span>
+                            <span class="tag">Statistics</span>
+                            <span class="tag">Visualization</span>
+                            <span class="tag">Seaborn</span>
+                        </div>
+                        <a href="https://github.com/ASHISH311001/retail-data-eda" target="_blank" class="btn">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-info">
+                <p>I'm always interested in hearing about new opportunities and collaborations.</p>
+                <p>Feel free to reach out!</p>
+                <div class="contact-links">
+                    <a href="mailto:jha.ashu3110@gmail.com" class="contact-btn">Email Me</a>
+                    <a href="https://github.com/ASHISH311001" target="_blank" class="contact-btn">GitHub</a>
+                    <a href="https://linkedin.com/in/ashish-jha" target="_blank" class="contact-btn">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Ashish Jha. All Rights Reserved.</p>
+        <p>Built with HTML & CSS | Hosted on GitHub Pages</p>
+    </footer>
+</body>
+</html>
