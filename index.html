@@ -3,249 +3,458 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ashish Jha | ML & Data Science Project</title>
+    <title>Ashish Jha | ML Engineer & Data Scientist</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; }
-        
-        /* Header */
-        header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 80px 20px; text-align: center; }
-        header h1 { font-size: 3em; margin-bottom: 10px; }
-        header p { font-size: 1.3em; opacity: 0.9; }
-        
-        /* Navigation */
-        nav { background: #2c3e50; padding: 15px 0; position: sticky; top: 0; z-index: 100; }
-        nav ul { list-style: none; text-align: center; }
-        nav li { display: inline-block; margin: 0 20px; }
-        nav a { color: white; text-decoration: none; font-weight: 500; transition: color 0.3s; }
-        nav a:hover { color: #667eea; }
-        
-        /* Container */
-        .container { max-width: 1200px; margin: 0 auto; padding: 60px 20px; }
-        
-        /* Section Titles */
-        .section-title { font-size: 2.5em; text-align: center; margin-bottom: 50px; color: #2c3e50; position: relative; }
-        .section-title:after { content: ''; display: block; width: 80px; height: 4px; background: #667eea; margin: 20px auto 0; }
-        
-        /* About Section */
-        #about { background: #f8f9fa; }
-        .about-content { display: flex; align-items: center; gap: 50px; flex-wrap: wrap; justify-content: center; }
-        .about-text { flex: 1; min-width: 300px; }
-        .about-text p { font-size: 1.1em; margin-bottom: 20px; }
-        
-        /* Skills */
-        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
-        .skill-card { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s; }
-        .skill-card:hover { transform: translateY(-5px); }
-        .skill-card h3 { color: #667eea; margin-bottom: 15px; }
-        .skill-card ul { list-style-position: inside; }
-        
-        /* Projects */
-        #projects { background: #f8f9fa; }
-        .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px; }
-        .project-card { background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s; }
-        .project-card:hover { transform: translateY(-5px); }
-        .project-header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 25px; }
-        .project-header h3 { font-size: 1.5em; margin-bottom: 10px; }
-        .project-body { padding: 25px; }
-        .project-body p { margin-bottom: 15px; color: #666; }
-        .project-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 15px; }
-        .tag { background: #e9ecef; padding: 5px 15px; border-radius: 20px; font-size: 0.85em; color: #495057; }
-        .btn { display: inline-block; background: #667eea; color: white; padding: 10px 25px; border-radius: 5px; text-decoration: none; transition: background 0.3s; }
-        .btn:hover { background: #764ba2; }
-        
-        /* Contact */
-        .contact-info { text-align: center; font-size: 1.2em; }
-        .contact-links { display: flex; justify-content: center; gap: 30px; margin-top: 30px; flex-wrap: wrap; }
-        .contact-btn { background: #2c3e50; color: white; padding: 15px 30px; border-radius: 5px; text-decoration: none; transition: background 0.3s; }
-        .contact-btn:hover { background: #667eea; }
-        
-        /* Footer */
-        footer { background: #2c3e50; color: white; text-align: center; padding: 30px 20px; }
-        
-        @media (max-width: 768px) {
-            header h1 { font-size: 2em; }
-            .section-title { font-size: 2em; }
-            .about-content { flex-direction: column; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Ashish Jha</h1>
-                <p>Aspiring ML Engineer | Data Science Enthusiast</p>
-    </header>
-    
-    <nav>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    
-    <section id="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>I'm passionate about Machine Learning and Data Science, building hands-on projects to develop practical skills in AI and analytics.. With a strong foundation in Python, machine learning algorithms, and deep learning frameworks, I transform complex data into actionable insights.</p>
-                    <p>I'm learning to build end-to-end ML solutions, exploring classification, regression, NLP, and anomaly detection through personal projects. My portfolio showcases 5 production-ready projects demonstrating proficiency in classification, regression, NLP, and anomaly detection.</p>
-                    <p>Currently eager to transition into ML/Data Science roles where I can apply and grow my technical abilities in real-world applications.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section id="skills">
-        <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <h3>Programming</h3>
-                    <ul>
-                        <li>Python</li>
-                        <li>SQL</li>
-                        <li>R</li>
-                        <li>Git & GitHub</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <h3>ML/AI Frameworks</h3>
-                    <ul>
-                        <li>Scikit-learn</li>
-                        <li>TensorFlow</li>
-                        <li>PyTorch</li>
-                        <li>XGBoost</li>
-                        <li>Keras</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <h3>Data Science</h3>
-                    <ul>
-                        <li>Pandas & NumPy</li>
-                        <li>Matplotlib & Seaborn</li>
-                        <li>Statistical Analysis</li>
-                        <li>Feature Engineering</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <h3>Specializations</h3>
-                    <ul>
-                        <li>Machine Learning</li>
-                        <li>Deep Learning</li>
-                        <li>NLP</li>
-                        <li>Computer Vision</li>
-                        <li>Time Series</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section id="projects">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Customer Churn Prediction</h3>
-                    </div>
-                    <div class="project-body">
-                        <p>Production-ready churn prediction using Logistic Regression, Random Forest, and XGBoost with SMOTE balancing and comprehensive feature engineering.</p>
-                        <div class="project-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">Scikit-learn</span>
-                            <span class="tag">XGBoost</span>
-                            <span class="tag">SMOTE</span>
-                        </div>
-                        <a href="https://github.com/ASHISH311001/customer-churn-prediction" target="_blank" class="btn">View Project</a>
-                    </div>
-                </div>
-                
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Fake News Detection (NLP)</h3>
-                    </div>
-                    <div class="project-body">
-                        <p>NLP-based fake news classifier using TF-IDF and Logistic Regression achieving 96% accuracy. Includes Streamlit web app for real-time classification.</p>
-                        <div class="project-tags">
-                            <span class="tag">NLP</span>
-                            <span class="tag">TF-IDF</span>
-                            <span class="tag">NLTK</span>
-                            <span class="tag">Streamlit</span>
-                        </div>
-                        <a href="https://github.com/ASHISH311001/fake-news-detection-nlp" target="_blank" class="btn">View Project</a>
-                    </div>
-                </div>
-                
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Credit Card Fraud Detection</h3>
-                    </div>
-                    <div class="project-body">
-                        <p>Anomaly detection system using Isolation Forest and Autoencoders for identifying fraudulent transactions with high recall and precision.</p>
-                        <div class="project-tags">
-                            <span class="tag">Anomaly Detection</span>
-                            <span class="tag">Isolation Forest</span>
-                            <span class="tag">Imbalanced Data</span>
-                        </div>
-                        <a href="https://github.com/ASHISH311001/credit-card-fraud-detection" target="_blank" class="btn">View Project</a>
-                    </div>
-                </div>
-                
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>House Price Prediction</h3>
-                    </div>
-                    <div class="project-body">
-                        <p>Advanced regression model using Linear Regression and Gradient Boosting with GridSearchCV hyperparameter tuning, achieving R² score of 0.86.</p>
-                        <div class="project-tags">
-                            <span class="tag">Regression</span>
-                            <span class="tag">Gradient Boosting</span>
-                            <span class="tag">GridSearchCV</span>
-                        </div>
-                        <a href="https://github.com/ASHISH311001/house-price-prediction" target="_blank" class="btn">View Project</a>
-                    </div>
-                </div>
-                
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Retail Data EDA</h3>
-                    </div>
-                    <div class="project-body">
-                        <p>Comprehensive exploratory data analysis on retail data with statistical testing, correlation analysis, sales trends, and customer behavior insights.</p>
-                        <div class="project-tags">
-                            <span class="tag">EDA</span>
-                            <span class="tag">Statistics</span>
-                            <span class="tag">Visualization</span>
-                            <span class="tag">Seaborn</span>
-                        </div>
-                        <a href="https://github.com/ASHISH311001/retail-data-eda" target="_blank" class="btn">View Project</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section id="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-info">
-                <p>I'm always interested in hearing about new opportunities and collaborations.</p>
-                <p>Feel free to reach out!</p>
-                <div class="contact-links">
-                    <a href="mailto:jha.ashu3110@gmail.com" class="contact-btn">Email Me</a>
-                    <a href="https://github.com/ASHISH311001" target="_blank" class="contact-btn">GitHub</a>
-                    <a href="https://www.linkedin.com/in/ashish-289301219/" target="_blank" class="contact-btn">LinkedIn</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <footer>
-        <p>&copy; 2025 Ashish Jha. All Rights Reserved.</p>
-        <p>Built with HTML & CSS | Hosted on GitHub Pages</p>
-    </footer>
-</body>
-</html>
+
+        :root {
+            --primary-color: #00d4ff;
+            --secondary-color: #7c3aed;
+            --accent-color: #ff6b9d;
+            --dark-bg: #0f172a;
+            --card-bg: #1e293b;
+            --text-light: #e2e8f0;
+            --text-muted: #cbd5e1;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--text-light);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Smooth scroll behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* ========== NAVBAR ========== */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(0, 212, 255, 0.1);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-size: 0.95rem;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-links a.active {
+            color: var(--primary-color);
+        }
+
+        .nav-links a.active::after {
+            width: 100%;
+        }
+
+        /* ========== HERO SECTION ========== */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, rgba(124, 58, 237, 0.1) 0%, rgba(0, 212, 255, 0.05) 100%);
+            margin-top: 60px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(0, 212, 255, 0.1), transparent);
+            border-radius: 50%;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -50%;
+            left: -10%;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(124, 58, 237, 0.1), transparent);
+            border-radius: 50%;
+            animation: float 8s ease-in-out infinite reverse;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            animation: fadeInUp 1s ease;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color), var(--accent-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            min-height: 100px;
+        }
+
+        .typewriter {
+            font-size: 1.5rem;
+            color: var(--text-muted);
+            height: 2rem;
+            overflow: hidden;
+        }
+
+        .typewriter span {
+            display: inline-block;
+            animation: typing 3.5s steps(40, end), blink 0.75s step-end infinite;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes blink {
+            0%, 49% {
+                border-right: 3px solid var(--primary-color);
+            }
+            50%, 100% {
+                border-right: transparent;
+            }
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 0.8rem 2rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: 600;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: var(--dark-bg);
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 212, 255, 0.5);
+        }
+
+        .btn-secondary {
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+            background: transparent;
+        }
+
+        .btn-secondary:hover {
+            background: var(--primary-color);
+            color: var(--dark-bg);
+            transform: translateY(-3px);
+        }
+
+        /* ========== SECTION STYLES ========== */
+        section {
+            padding: 5rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-align: center;
+            position: relative;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            margin: 1rem auto;
+            border-radius: 2px;
+        }
+
+        /* ========== ABOUT SECTION ========== */
+        #about {
+            background: linear-gradient(135deg, rgba(124, 58, 237, 0.05) 0%, rgba(0, 212, 255, 0.05) 100%);
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .about-text p {
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+            color: var(--text-muted);
+            line-height: 1.8;
+        }
+
+        .timeline {
+            position: relative;
+            padding: 2rem 0;
+        }
+
+        .timeline-item {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            animation: slideInUp 0.6s ease;
+        }
+
+        .timeline-marker {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            box-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+        }
+
+        .timeline-content {
+            flex: 1;
+        }
+
+        .timeline-content h4 {
+            color: var(--primary-color);
+            margin-bottom: 0.3rem;
+        }
+
+        .timeline-content p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        /* ========== SKILLS SECTION ========== */
+        #skills {
+            background: linear-gradient(135deg, rgba(0, 212, 255, 0.05) 0%, rgba(124, 58, 237, 0.05) 100%);
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .skill-card {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(0, 212, 255, 0.1);
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .skill-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(0, 212, 255, 0.2), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .skill-card:hover::before {
+            left: 100%;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary-color);
+            box-shadow: 0 10px 30px rgba(0, 212, 255, 0.2);
+        }
+
+        .skill-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .skill-name {
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        /* ========== PROJECTS SECTION ========== */
+        #projects {
+            background: linear-gradient(135deg, rgba(124, 58, 237, 0.05) 0%, rgba(255, 107, 157, 0.03) 100%);
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .project-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(0, 212, 255, 0.1);
+            display: flex;
+            flex-direction: column;
+            animation: slideInUp 0.6s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary-color);
+            box-shadow: 0 15px 40px rgba(0, 212, 255, 0.3);
+        }
+
+        .project-header {
+            background: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(124, 58, 237, 0.1));
+            padding: 2rem;
+            border-bottom: 2px solid rgba(0, 212, 255, 0.1);
+        }
+
+        .project-title {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+
+        .project-description {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+            flex-grow: 1;
+        }
+
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin: 1rem 0;
+        }
+
+        .tag {
+            background: rgba(0, 212, 255, 0.1);
+            color: var(--primary-color);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            border: 1px solid rgba(0, 212, 255, 0.2);
+        }
+
+        .project-footer {
+            padding: 1.5rem 2rem;
+            display: flex;
+            gap: 1rem;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .project-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .project-links a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .project-links a:hover {
+            color: var(--accent-color);
+        }
+
+        /* ========== CONTACT SECTION ========== */
+        #contact {
+            background: linear-gradient(135deg, rgba(0, 212, 255, 0.05)
