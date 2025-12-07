@@ -458,3 +458,295 @@
         /* ========== CONTACT SECTION ========== */
         #contact {
             background: linear-gradient(135deg, rgba(0, 212, 255, 0.05)
+
+   }
+
+   /* ========== ANIMATIONS ========== */
+   @keyframes float {
+   0%, 100% { transform: translateY(0); }
+   50% { transform: translateY(-20px); }
+   }
+
+   @keyframes slideInUp {
+   from {
+   opacity: 0;
+   transform: translateY(30px);
+   }
+   to {
+   opacity: 1;
+   transform: translateY(0);
+   }
+   }
+
+   @keyframes fadeInUp {
+   from {
+   opacity: 0;
+   transform: translateY(30px);
+   }
+   to {
+   opacity: 1;
+   transform: translateY(0);
+   }
+   }
+
+   /* ========== FOOTER ========== */
+   footer {
+   background: var(--dark-bg);
+   border-top: 1px solid rgba(0, 212, 255, 0.1);
+   padding: 2rem;
+   text-align: center;
+   color: var(--text-muted);
+   }
+
+   /* ========== RESPONSIVE ========== */
+   @media (max-width: 768px) {
+   nav { padding: 1rem; }
+   .nav-links { gap: 1rem; font-size: 0.9rem; }
+   .hero h1 { font-size: 2.5rem; }
+   .hero-cta { gap: 1rem; }
+   .section-title { font-size: 2rem; }
+   .about-content { grid-template-columns: 1fr; }
+   .projects-grid { grid-template-columns: 1fr; }
+   }
+   </style>
+</head>
+<body>
+   <!-- Navigation -->
+   <nav>
+   <div class="logo">Ashish</div>
+   <ul class="nav-links">
+   <li><a href="#home" class="active">Home</a></li>
+   <li><a href="#about">About</a></li>
+   <li><a href="#skills">Skills</a></li>
+   <li><a href="#projects">Projects</a></li>
+   <li><a href="#contact">Contact</a></li>
+   </ul>
+   </nav>
+
+   <!-- Hero Section -->
+   <section class="hero" id="home">
+   <div class="hero-content">
+   <h1>Ashish Jha</h1>
+   <div class="typewriter">
+   <span>ML Engineer | Data Scientist | AI Enthusiast</span>
+   </div>
+   <div class="hero-cta">
+   <button class="btn btn-primary" onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">View My Work</button>
+   <button class="btn btn-secondary" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Get In Touch</button>
+   </div>
+   </div>
+   </section>
+
+   <!-- About Section -->
+   <section id="about">
+   <h2 class="section-title">About Me</h2>
+   <div class="about-content">
+   <div class="about-text">
+   <p>I'm a transitioning <strong>Tyre Design Engineer</strong> with 1.5 years of experience, now diving deep into <strong>Machine Learning and Data Science</strong>. With a strong foundation in Python, ML algorithms, and deep learning frameworks, I build production-ready solutions.</p>
+   <p>My journey combines precision engineering mindset with cutting-edge AI/ML techniques. I've mastered classification, regression, NLP, and anomaly detection through hands-on projects and Coursera specializations.</p>
+   <p>Currently seeking opportunities to transition into <strong>ML/Data Science roles</strong> where I can apply my technical skills to real-world problems and drive meaningful impact.</p>
+   </div>
+   <div class="timeline">
+   <div class="timeline-item">
+   <div class="timeline-marker"></div>
+   <div class="timeline-content">
+   <h4>Tyre Design Engineer</h4>
+   <p>1.5 years | TBR & PCR expertise</p>
+   </div>
+   </div>
+   <div class="timeline-item">
+   <div class="timeline-marker"></div>
+   <div class="timeline-content">
+   <h4>ML/Data Science Learning</h4>
+   <p>Coursera Specializations | Kaggle Projects</p>
+   </div>
+   </div>
+   <div class="timeline-item">
+   <div class="timeline-marker"></div>
+   <div class="timeline-content">
+   <h4>AWS Certified</h4>
+   <p>Pursuing AWS Cloud Practitioner</p>
+   </div>
+   </div>
+   </div>
+   </div>
+   </section>
+
+   <!-- Skills Section -->
+   <section id="skills">
+   <h2 class="section-title">Technical Skills</h2>
+   <div class="skills-grid">
+   <div class="skill-card">
+   <div class="skill-icon">🐍</div>
+   <div class="skill-name">Python</div>
+   </div>
+   <div class="skill-card">
+   <div class="skill-icon">📊</div>
+   <div class="skill-name">Data Analysis</div>
+   </div>
+   <div class="skill-card">
+   <div class="skill-icon">🤖</div>
+   <div class="skill-name">Machine Learning</div>
+   </div>
+   <div class="skill-card">
+   <div class="skill-icon">🧠</div>
+   <div class="skill-name">Deep Learning</div>
+   </div>
+   <div class="skill-card">
+   <div class="skill-icon">📈</div>
+   <div class="skill-name">Scikit-learn</div>
+   </div>
+   <div class="skill-card">
+   <div class="skill-icon">🔤</div>
+   <div class="skill-name">NLP</div>
+   </div>
+   <div class="skill-card">
+   <div class="skill-icon">👁️</div>
+   <div class="skill-name">Computer Vision</div>
+   </div>
+   <div class="skill-card">
+   <div class="skill-icon">🌐</div>
+   <div class="skill-name">SQL</div>
+   </div>
+   </div>
+   </section>
+
+   <!-- Projects Section -->
+   <section id="projects">
+   <h2 class="section-title">Featured Projects</h2>
+   <div class="projects-grid">
+   <div class="project-card">
+   <div class="project-header">
+   <h3 class="project-title">Customer Churn Prediction</h3>
+   </div>
+   <div class="project-description" style="padding: 2rem; flex-grow: 1;">
+   Production-ready churn prediction using Logistic Regression, Random Forest, and XGBoost with SMOTE balancing. Achieved 85% accuracy with comprehensive feature engineering.
+   </div>
+   <div class="project-tags" style="padding: 0 2rem;">
+   <span class="tag">Python</span>
+   <span class="tag">Scikit-learn</span>
+   <span class="tag">XGBoost</span>
+   </div>
+   <div class="project-footer">
+   <div class="project-links">
+   <a href="https://github.com/ASHISH311001/customer-churn-prediction" target="_blank">GitHub →</a>
+   <a href="https://kaggle.com" target="_blank">Kaggle →</a>
+   </div>
+   </div>
+   </div>
+
+   <div class="project-card">
+   <div class="project-header">
+   <h3 class="project-title">Fake News Detection (NLP)</h3>
+   </div>
+   <div class="project-description" style="padding: 2rem; flex-grow: 1;">
+   NLP-based fake news classifier using TF-IDF and Logistic Regression achieving 96% accuracy. Includes Streamlit web app for real-time classification.
+   </div>
+   <div class="project-tags" style="padding: 0 2rem;">
+   <span class="tag">NLP</span>
+   <span class="tag">TF-IDF</span>
+   <span class="tag">Streamlit</span>
+   </div>
+   <div class="project-footer">
+   <div class="project-links">
+   <a href="https://github.com/ASHISH311001/fake-news-detection-nlp" target="_blank">GitHub →</a>
+   </div>
+   </div>
+   </div>
+
+   <div class="project-card">
+   <div class="project-header">
+   <h3 class="project-title">Credit Card Fraud Detection</h3>
+   </div>
+   <div class="project-description" style="padding: 2rem; flex-grow: 1;">
+   Anomaly detection system using Isolation Forest and Autoencoders for identifying fraudulent transactions with high recall and precision.
+   </div>
+   <div class="project-tags" style="padding: 0 2rem;">
+   <span class="tag">Anomaly Detection</span>
+   <span class="tag">Deep Learning</span>
+   <span class="tag">Imbalanced Data</span>
+   </div>
+   <div class="project-footer">
+   <div class="project-links">
+   <a href="https://github.com/ASHISH311001/credit-card-fraud-detection" target="_blank">GitHub →</a>
+   </div>
+   </div>
+   </div>
+
+   <div class="project-card">
+   <div class="project-header">
+   <h3 class="project-title">House Price Prediction</h3>
+   </div>
+   <div class="project-description" style="padding: 2rem; flex-grow: 1;">
+   Advanced regression model using Linear Regression and Gradient Boosting with GridSearchCV hyperparameter tuning, achieving R² score of 0.86.
+   </div>
+   <div class="project-tags" style="padding: 0 2rem;">
+   <span class="tag">Regression</span>
+   <span class="tag">GridSearchCV</span>
+   <span class="tag">EDA</span>
+   </div>
+   <div class="project-footer">
+   <div class="project-links">
+   <a href="https://github.com/ASHISH311001/house-price-prediction" target="_blank">GitHub →</a>
+   </div>
+   </div>
+   </div>
+
+   <div class="project-card">
+   <div class="project-header">
+   <h3 class="project-title">Retail Data EDA</h3>
+   </div>
+   <div class="project-description" style="padding: 2rem; flex-grow: 1;">
+   Comprehensive exploratory data analysis on retail data with statistical testing, correlation analysis, sales trends, and customer behavior insights.
+   </div>
+   <div class="project-tags" style="padding: 0 2rem;">
+   <span class="tag">EDA</span>
+   <span class="tag">Statistics</span>
+   <span class="tag">Visualization</span>
+   </div>
+   <div class="project-footer">
+   <div class="project-links">
+   <a href="https://github.com/ASHISH311001/retail-data-eda" target="_blank">GitHub →</a>
+   </div>
+   </div>
+   </div>
+   </div>
+   </section>
+
+   <!-- Contact Section -->
+   <section id="contact">
+   <h2 class="section-title">Get In Touch</h2>
+   <div style="text-align: center; font-size: 1.1rem; color: var(--text-muted); margin-bottom: 2rem;">
+   <p>I'm always interested in hearing about new opportunities and collaborations.</p>
+   <p>Feel free to reach out through any of these channels:</p>
+   </div>
+   <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+   <a href="mailto:jha.ashu3110@gmail.com" class="btn btn-primary">📧 Email Me</a>
+   <a href="https://github.com/ASHISH311001" target="_blank" class="btn btn-secondary">💻 GitHub</a>
+   <a href="https://www.linkedin.com/in/ashish-289301219/" target="_blank" class="btn btn-secondary">💼 LinkedIn</a>
+   <a href="https://kaggle.com/ashishjha3110" target="_blank" class="btn btn-secondary">🎯 Kaggle</a>
+   </div>
+   </section>
+
+   <!-- Footer -->
+   <footer>
+   <p>© 2025 Ashish Jha. All Rights Reserved.</p>
+   <p>Built with HTML, CSS & JavaScript | Hosted on GitHub Pages</p>
+   </footer>
+
+   <script>
+   // Smooth scroll navigation
+   document.querySelectorAll('.nav-links a').forEach(link => {
+   link.addEventListener('click', (e) => {
+   e.preventDefault();
+   document.querySelectorAll('.nav-links a').forEach(l => l.classList.remove('active'));
+   link.classList.add('active');
+   const target = document.querySelector(link.getAttribute('href'));
+   if (target) {
+   target.scrollIntoView({ behavior: 'smooth' });
+   }
+   });
+   });
+   </script>
+</body>
+</html>
